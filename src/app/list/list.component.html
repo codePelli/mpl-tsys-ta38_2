@@ -1,0 +1,10 @@
+<div>
+    <h2>Listado de usuarios</h2>
+    <ul>
+        @for (user of users; track $index) {
+            <li>
+                Nombre: {{ user.name }}, Email: {{ user.email }}, Mensaje: {{ user.mensaje }}, Respuesta: {{user.respuesta}}
+            </li>
+        }
+    </ul>
+</div>
